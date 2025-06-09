@@ -9,7 +9,7 @@ namespace GameStore.Api.Data.Migrations
     public partial class InotialCreate : Migration
     {
         /// <inheritdoc />
-        protected override void Up(MigrationBuilder migrationBuilder)
+        protected override void Up(MigrationBuilder migrationBuilder)//used to move to the next migration
         {
             migrationBuilder.CreateTable(
                 name: "Genres",
@@ -53,7 +53,7 @@ namespace GameStore.Api.Data.Migrations
         }
 
         /// <inheritdoc />
-        protected override void Down(MigrationBuilder migrationBuilder)
+        protected override void Down(MigrationBuilder migrationBuilder)// go back to the previous state of the db 
         {
             migrationBuilder.DropTable(
                 name: "Games");
